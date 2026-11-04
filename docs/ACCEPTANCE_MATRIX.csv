@@ -1,0 +1,26 @@
+requirement_id,subsystem,acceptance_criterion,verification_test,evidence_path,status,owner,site_signoff_required
+G1-01,Physics,Every reaction atom-balanced,tests/physics/test_species_reactions.py::test_every_reaction_atom_balanced,docs/VALIDATION_REPORT.md,PASS,Extractmet,no
+G1-02,Physics,Steady counter-current solution converges with element closure < 1e-9 and energy < 1e-6,tests/physics/test_solver.py::test_steady_converges_and_conserves,fixtures/baseline_*.json,PASS,Extractmet,no
+G1-03,Physics,Transient from steady stays steady; Fe closure per step < 1e-9,tests/physics/test_solver.py::test_transient_from_steady_stays_steady,fixtures/transient_demo_RK-100TPD.json,PASS,Extractmet,no
+G1-04,Physics,Counter-current boundary conditions and sign conventions,tests/physics/test_solver.py::test_counter_current_boundary,tests,PASS,Extractmet,no
+G1-05,Physics,Grid refinement (18 vs 36 cells) within declared tolerance,tests/physics/test_solver.py::test_grid_refinement,docs/VALIDATION_REPORT.md,PASS,Extractmet,no
+G1-06,Physics,Nonnegative inventories and rejection of invalid inputs,tests/physics/test_solver.py,tests,PASS,Extractmet,no
+G2-01,Metallurgy,Metallization/Fe accounting traceable to species; hand check,tests/physics/test_species_reactions.py::test_metallization_hand_calculation,docs/MODEL_EQUATIONS.md,PASS,Extractmet,no
+G2-02,Metallurgy,No reduction at equilibrium or without reductant,tests/physics/test_kinetics.py,tests,PASS,Extractmet,no
+G2-03,Metallurgy,Kinetic parameters calibrated to site data,CALIBRATION_GUIDE procedure,-,SITE-PENDING,Site + Extractmet,yes
+G2-04,Metallurgy,Accretion proxy validated against ring history,historical comparison,-,SITE-PENDING,Site,yes
+G3-01,ML,Versioned pipeline; chronological split; conformal intervals; registry,tests/ml/test_ml.py,fixtures/ml_report_RK-100TPD.json,DEMO-ONLY,Extractmet,no
+G3-02,ML,Leakage test passes; OOD/drift guards; physics fallback,tests/ml/test_ml.py::test_no_leakage,tests,PASS,Extractmet,no
+G3-03,ML,Plant accuracy on blind campaign meets contract,blind test,-,SITE-PENDING,Site,yes
+G4-01,MPC,Constrained receding-horizon solve respects bounds/ramps/locks,tests/mpc/test_mpc.py,tests,PASS,Extractmet,no
+G4-02,MPC,Fail-safe: no recommendation on optimiser failure/stale data/supervisory mode,tests/mpc/test_mpc.py,tests,PASS,Extractmet,no
+G4-03,MPC,Demonstrated benefit vs rule-based baseline in simulation,closed-loop simulation,fixtures/closed_loop_RK-100TPD.json,FAIL,Extractmet,no
+G5-01,GUI,14 screens load without errors incl. backend-linked 3D kiln,tests/e2e/smoke.mjs (frontend),frontend screenshots,PASS,Extractmet,no
+G6-01,Integration,API v1 + WebSocket + tag dictionary + importer + persistent store + audit,tests/integration/test_api.py,docs/openapi.json,PASS,Extractmet,no
+G6-02,Integration,OPC UA / MQTT on-prem read-only connectors,on-prem FAT,-,SITE-PENDING,Site IT/OT,yes
+G7-01,Security,RBAC server-enforced; secrets not exposed; no write path,tests/integration/test_api.py,app/core/security.py,PASS,Extractmet,no
+G7-02,Security,SSO/OIDC; TLS; pen test; IEC 62443 review,site security programme,-,SITE-PENDING,Site,yes
+G8-01,Packaging,Two independently runnable ZIP repos from clean extraction,clean-unzip test,docs/VALIDATION_REPORT.md,PASS,Extractmet,no
+G9-01,Docs,Deployment guide (md+docx) and technical documents present,file review,docs/,PASS,Extractmet,no
+G10-01,Deployment,Local demo reproduced; Render deployment smoke test,scripts/smoke_api.py on Render,-,SITE-PENDING,Customer,no
+G11-01,Industrial acceptance,Plant data validation; HAZOP/MoC; shadow and advisory trial; sign-off,site programme,-,SITE-PENDING,Site authority,yes

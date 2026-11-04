@@ -1,0 +1,19 @@
+# Exact versions verified together (python 3.13.x) - tests executed with these pins.
+numpy==2.5.3
+scipy==1.18.1
+pandas==3.0.5
+scikit-learn==1.9.1
+joblib==1.6.0
+fastapi==0.162.0
+starlette==1.7.0
+uvicorn==0.54.0
+websockets==17.4
+pydantic==2.13.5
+pydantic_core==2.46.5
+SQLAlchemy==2.1.6
+alembic==1.20.1
+openpyxl==3.1.5
+matplotlib==3.11.2
+python-multipart==0.0.32
+PyYAML==6.0.3
+httpx==0.28.1

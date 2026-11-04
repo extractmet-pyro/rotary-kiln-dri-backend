@@ -1,0 +1,45 @@
+tag_id,human_name,source_system,data_type,engineering_unit,raw_unit,conversion,valid_min,valid_max,sampling_period_s,physical_location_z_m,phase,source_quality,timestamp_timezone,expected_latency_s,calibration_date,read_permission,commandable_flag,owner,equipment_id,notes
+PELLET_FEED_TPH,Pellet weigh-feeder rate,DCS,float,t/h,t/h,1:1,0,120,10,0.0,solid,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,WF-PEL,setpoint is commandable at site only via local loop
+COAL_FEED_TPH,Feed-end coal weigh-feeder rate,DCS,float,t/h,t/h,1:1,0,100,10,0.0,solid,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,WF-CF,
+COAL_INJECTION_TPH,Discharge-end injection coal rate,DCS,float,t/h,t/h,1:1,0,60,10,42.0,solid,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,WF-CI,
+DOLOMITE_TPH,Dolomite feeder rate,DCS,float,t/h,t/h,1:1,0,10,10,0.0,solid,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,WF-DOL,
+KILN_RPM,Kiln rotational speed,DCS,float,rev/min,rev/min,1:1,0,3,5,,mechanical,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,DRV-01,
+KILN_DRIVE_TORQUE,Kiln main-drive torque,DCS,float,% rated,% rated,1:1,0,150,5,,mechanical,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,DRV-01,
+KILN_DRAFT_PA,Feed-end hood draft,DCS,float,Pa,Pa,1:1,-600,100,2,0.0,gas,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,HOOD-F,
+AIR_PRIMARY_NM3H,Primary / central burner air,DCS,float,Nm3/h,Nm3/h,1:1,0,60000,5,42.0,gas,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,FAN-PA,
+EXHAUST_CO_VOLPCT_DRY,Kiln exit CO (dry),ANALYSER,float,vol % dry,vol % dry,1:1,0,30,10,0.0,gas,measured,UTC,90,SITE-PENDING,viewer+,False,process_engineer,RK-01,sample-conditioned extractive analyser; transport delay modelled
+EXHAUST_CO2_VOLPCT_DRY,Kiln exit CO2 (dry),ANALYSER,float,vol % dry,vol % dry,1:1,0,40,10,0.0,gas,measured,UTC,90,SITE-PENDING,viewer+,False,process_engineer,RK-01,
+EXHAUST_O2_VOLPCT_DRY,Kiln exit O2 (dry),ANALYSER,float,vol % dry,vol % dry,1:1,0,21,10,0.0,gas,measured,UTC,90,SITE-PENDING,viewer+,False,process_engineer,RK-01,
+EXHAUST_TEMP_C,Kiln exit gas temperature,DCS,float,C,C,1:1,0,1400,5,0.0,gas,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,RK-01,
+COOLER_EXIT_C,Cooler product discharge temperature,DCS,float,C,C,1:1,0,400,30,,solid,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,CLR-01,
+DRI_DISCHARGE_TPH,DRI to product conveyor (belt scale),DCS,float,t/h,t/h,1:1,0,100,30,,solid,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,BS-DRI,
+WHRB_STEAM_TPH,WHRB steam flow,DCS,float,t/h,t/h,1:1,0,200,10,,utility,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,WHRB-01,
+ESP_DP_PA,ESP inlet-outlet differential pressure,DCS,float,Pa,Pa,1:1,0,3000,10,,gas,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,ESP-01,
+LAB_METALLIZATION_PCT,Lab metallization of DRI sample,LIMS,float,%,%,1:1,50,100,7200,,solid,measured,UTC,5400,SITE-PENDING,viewer+,False,process_engineer,RK-01,manual sample every ~2 h; analysis delay ~1.5 h; RTD cohort alignment required
+LAB_TOTAL_FE_PCT,Lab total Fe,LIMS,float,wt %,wt %,1:1,60,99,7200,,solid,measured,UTC,5400,SITE-PENDING,viewer+,False,process_engineer,RK-01,
+LAB_METALLIC_FE_PCT,Lab metallic Fe,LIMS,float,wt %,wt %,1:1,40,99,7200,,solid,measured,UTC,5400,SITE-PENDING,viewer+,False,process_engineer,RK-01,
+LAB_DRI_CARBON_PCT,Lab DRI carbon,LIMS,float,wt %,wt %,1:1,0,3,7200,,solid,measured,UTC,5400,SITE-PENDING,viewer+,False,process_engineer,RK-01,
+TEMP_FREEBOARD_Z1_C,Freeboard thermocouple zone 1,DCS,float,C,C,1:1,0,1500,5,4.2,gas,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,RK-01,TC through shell into freeboard; reading lies between gas and bed T (bias modelled)
+TEMP_SHELL_Z1_C,Shell scanner zone 1 (mean),IR-SCANNER,float,C,C,1:1,0,600,10,4.2,shell,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,RK-01,
+TEMP_FREEBOARD_Z2_C,Freeboard thermocouple zone 2,DCS,float,C,C,1:1,0,1500,5,10.5,gas,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,RK-01,TC through shell into freeboard; reading lies between gas and bed T (bias modelled)
+TEMP_SHELL_Z2_C,Shell scanner zone 2 (mean),IR-SCANNER,float,C,C,1:1,0,600,10,10.5,shell,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,RK-01,
+TEMP_FREEBOARD_Z3_C,Freeboard thermocouple zone 3,DCS,float,C,C,1:1,0,1500,5,16.8,gas,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,RK-01,TC through shell into freeboard; reading lies between gas and bed T (bias modelled)
+TEMP_SHELL_Z3_C,Shell scanner zone 3 (mean),IR-SCANNER,float,C,C,1:1,0,600,10,16.8,shell,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,RK-01,
+TEMP_FREEBOARD_Z4_C,Freeboard thermocouple zone 4,DCS,float,C,C,1:1,0,1500,5,23.1,gas,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,RK-01,TC through shell into freeboard; reading lies between gas and bed T (bias modelled)
+TEMP_SHELL_Z4_C,Shell scanner zone 4 (mean),IR-SCANNER,float,C,C,1:1,0,600,10,23.1,shell,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,RK-01,
+TEMP_FREEBOARD_Z5_C,Freeboard thermocouple zone 5,DCS,float,C,C,1:1,0,1500,5,29.4,gas,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,RK-01,TC through shell into freeboard; reading lies between gas and bed T (bias modelled)
+TEMP_SHELL_Z5_C,Shell scanner zone 5 (mean),IR-SCANNER,float,C,C,1:1,0,600,10,29.4,shell,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,RK-01,
+TEMP_FREEBOARD_Z6_C,Freeboard thermocouple zone 6,DCS,float,C,C,1:1,0,1500,5,35.7,gas,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,RK-01,TC through shell into freeboard; reading lies between gas and bed T (bias modelled)
+TEMP_SHELL_Z6_C,Shell scanner zone 6 (mean),IR-SCANNER,float,C,C,1:1,0,600,10,35.7,shell,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,RK-01,
+AIR_SECONDARY_SA01_NM3H,Secondary air tube SA01,DCS,float,Nm3/h,Nm3/h,1:1,0,3647.0,5,5.04,gas,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,FAN-SA01,
+AIR_SECONDARY_SA02_NM3H,Secondary air tube SA02,DCS,float,Nm3/h,Nm3/h,1:1,0,3908.0,5,10.22,gas,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,FAN-SA02,
+AIR_SECONDARY_SA03_NM3H,Secondary air tube SA03,DCS,float,Nm3/h,Nm3/h,1:1,0,4168.0,5,15.4,gas,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,FAN-SA03,
+AIR_SECONDARY_SA04_NM3H,Secondary air tube SA04,DCS,float,Nm3/h,Nm3/h,1:1,0,4429.0,5,20.58,gas,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,FAN-SA04,
+AIR_SECONDARY_SA05_NM3H,Secondary air tube SA05,DCS,float,Nm3/h,Nm3/h,1:1,0,4689.0,5,25.76,gas,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,FAN-SA05,
+AIR_SECONDARY_SA06_NM3H,Secondary air tube SA06,DCS,float,Nm3/h,Nm3/h,1:1,0,4950.0,5,30.94,gas,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,FAN-SA06,
+AIR_SECONDARY_SA07_NM3H,Secondary air tube SA07,DCS,float,Nm3/h,Nm3/h,1:1,0,5210.0,5,36.12,gas,measured,UTC,5,SITE-PENDING,viewer+,False,process_engineer,FAN-SA07,
+EST_METALLIZATION_PCT,Model-estimated discharge metallization,TWIN,float,%,%,n/a,0,100,60,,model,inferred,UTC,60,n/a,viewer+,False,data_scientist,TWIN,never written to DCS
+EST_PEAK_BED_T_C,Model-estimated peak bed temperature,TWIN,float,C,C,n/a,0,1500,60,,model,inferred,UTC,60,n/a,viewer+,False,data_scientist,TWIN,never written to DCS
+EST_GAS_REDUCING_POTENTIAL,Model-estimated CO/(CO+CO2) in bed,TWIN,float,-,-,n/a,0,1,60,,model,inferred,UTC,60,n/a,viewer+,False,data_scientist,TWIN,never written to DCS
+EST_ACCRETION_RISK,Accretion risk proxy (unvalidated),TWIN,float,-,-,n/a,0,1,60,,model,inferred,UTC,60,n/a,viewer+,False,data_scientist,TWIN,never written to DCS
+CALC_SPECIFIC_COAL_KG_T,Specific coal per t DRI,TWIN,float,kg/t,kg/t,n/a,0,3000,60,,model,derived,UTC,60,n/a,viewer+,False,data_scientist,TWIN,never written to DCS

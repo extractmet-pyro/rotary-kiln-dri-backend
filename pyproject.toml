@@ -1,0 +1,14 @@
+[project]
+name = "rotary-kiln-dri-backend"
+version = "1.0.0"
+description = "Rotary-kiln DRI digital twin - physics, ML, advisory MPC, FastAPI (Extractmet Private Limited)"
+requires-python = ">=3.12"
+authors = [{ name = "Extractmet Private Limited" }]
+license = { text = "Proprietary - Extractmet Private Limited" }
+
+[tool.ruff]
+line-length = 125
+target-version = "py312"
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E741", "E731", "E501"]

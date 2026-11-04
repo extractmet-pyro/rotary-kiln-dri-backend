@@ -1,0 +1,427 @@
+{
+ "tau_min": [
+  [
+   64.3513388976686,
+   4.76334341839413,
+   51.8008770366461,
+   153.26376330152993,
+   14.093350923077843,
+   90.0,
+   90.0,
+   105.0
+  ],
+  [
+   236.5268424504455,
+   14.093350923077843,
+   41.69813569897527,
+   236.5268424504455,
+   190.39693798951524,
+   90.0,
+   90.0,
+   105.0
+  ],
+  [
+   99.31127012050953,
+   51.8008770366461,
+   123.37268334977585,
+   99.31127012050953,
+   79.9425618796572,
+   45.0,
+   45.0,
+   105.0
+  ],
+  [
+   7.351108663848318,
+   4.76334341839413,
+   2.0,
+   3.0865331420200657,
+   2.0,
+   45.0,
+   45.0,
+   105.0
+  ],
+  [
+   64.3513388976686,
+   123.37268334977585,
+   4.76334341839413,
+   79.9425618796572,
+   153.26376330152993,
+   90.0,
+   90.0,
+   105.0
+  ],
+  [
+   1080.0,
+   1080.0,
+   1080.0,
+   1080.0,
+   21.74979735309943,
+   90.0,
+   90.0,
+   105.0
+  ],
+  [
+   41.69813569897527,
+   11.344720260779335,
+   27.019399293852892,
+   7.351108663848318,
+   2.0,
+   45.0,
+   45.0,
+   105.0
+  ],
+  [
+   105.0,
+   105.0,
+   105.0,
+   45.0,
+   105.0,
+   45.0,
+   45.0,
+   105.0
+  ],
+  [
+   105.0,
+   105.0,
+   105.0,
+   90.0,
+   105.0,
+   90.0,
+   90.0,
+   105.0
+  ],
+  [
+   105.0,
+   105.0,
+   105.0,
+   90.0,
+   105.0,
+   90.0,
+   90.0,
+   105.0
+  ],
+  [
+   105.0,
+   105.0,
+   105.0,
+   8.0,
+   105.0,
+   45.0,
+   45.0,
+   105.0
+  ]
+ ],
+ "theta_min": [
+  [
+   18.0,
+   18.0,
+   72.0,
+   72.0,
+   18.0,
+   10.0,
+   10.0,
+   135.0
+  ],
+  [
+   162.0,
+   54.0,
+   54.0,
+   36.0,
+   144.0,
+   10.0,
+   10.0,
+   135.0
+  ],
+  [
+   198.0,
+   234.0,
+   18.0,
+   0.0,
+   18.0,
+   10.0,
+   10.0,
+   45.0
+  ],
+  [
+   0.0,
+   0.0,
+   18.0,
+   18.0,
+   18.0,
+   10.0,
+   10.0,
+   45.0
+  ],
+  [
+   324.0,
+   252.0,
+   18.0,
+   54.0,
+   54.0,
+   10.0,
+   10.0,
+   135.0
+  ],
+  [
+   432.0,
+   306.0,
+   270.0,
+   198.0,
+   108.0,
+   10.0,
+   10.0,
+   45.0
+  ],
+  [
+   144.0,
+   162.0,
+   36.0,
+   18.0,
+   18.0,
+   10.0,
+   10.0,
+   45.0
+  ],
+  [
+   45.0,
+   45.0,
+   45.0,
+   10.0,
+   45.0,
+   10.0,
+   10.0,
+   45.0
+  ],
+  [
+   135.0,
+   135.0,
+   135.0,
+   75.0,
+   135.0,
+   10.0,
+   10.0,
+   135.0
+  ],
+  [
+   135.0,
+   135.0,
+   135.0,
+   75.0,
+   135.0,
+   10.0,
+   10.0,
+   135.0
+  ],
+  [
+   45.0,
+   45.0,
+   45.0,
+   1.0,
+   45.0,
+   10.0,
+   10.0,
+   45.0
+  ]
+ ],
+ "source": "identified from physics step tests (RK-100TPD)",
+ "pairs": {
+  "pellet_tph->metallization_pct": {
+   "gain_per_step": -0.8255976574235192,
+   "tau_min": 64.3513388976686,
+   "theta_min": 18.0
+  },
+  "pellet_tph->dri_t_h": {
+   "gain_per_step": 0.2930184859867025,
+   "tau_min": 236.5268424504455,
+   "theta_min": 162.0
+  },
+  "pellet_tph->peak_bed_T_C": {
+   "gain_per_step": 10.780295968445927,
+   "tau_min": 99.31127012050953,
+   "theta_min": 198.0
+  },
+  "pellet_tph->exit_gas_T_C": {
+   "gain_per_step": -3.4489701433561084,
+   "tau_min": 7.351108663848318,
+   "theta_min": 0.0
+  },
+  "pellet_tph->char_C_discharge_t_h": {
+   "gain_per_step": -0.06330024840581333,
+   "tau_min": 64.3513388976686,
+   "theta_min": 324.0
+  },
+  "pellet_tph->peak_shell_T_C": {
+   "gain_per_step": 0.22061817754149887,
+   "tau_min": 1080.0,
+   "theta_min": 432.0
+  },
+  "pellet_tph->exit_O2_vol_pct_dry": {
+   "gain_per_step": -0.3032765321904166,
+   "tau_min": 41.69813569897527,
+   "theta_min": 144.0
+  },
+  "feed_coal_tph->metallization_pct": {
+   "gain_per_step": -0.25031353728658917,
+   "tau_min": 4.76334341839413,
+   "theta_min": 18.0
+  },
+  "feed_coal_tph->dri_t_h": {
+   "gain_per_step": 0.01197196984860845,
+   "tau_min": 14.093350923077843,
+   "theta_min": 54.0
+  },
+  "feed_coal_tph->peak_bed_T_C": {
+   "gain_per_step": -3.371913109847267,
+   "tau_min": 51.8008770366461,
+   "theta_min": 234.0
+  },
+  "feed_coal_tph->exit_gas_T_C": {
+   "gain_per_step": 1.018998679278629,
+   "tau_min": 4.76334341839413,
+   "theta_min": 0.0
+  },
+  "feed_coal_tph->char_C_discharge_t_h": {
+   "gain_per_step": 0.09124655943171359,
+   "tau_min": 123.37268334977585,
+   "theta_min": 252.0
+  },
+  "feed_coal_tph->peak_shell_T_C": {
+   "gain_per_step": -1.0602464034486443,
+   "tau_min": 1080.0,
+   "theta_min": 306.0
+  },
+  "feed_coal_tph->exit_O2_vol_pct_dry": {
+   "gain_per_step": 0.030904951988980696,
+   "tau_min": 11.344720260779335,
+   "theta_min": 162.0
+  },
+  "injection_coal_tph->metallization_pct": {
+   "gain_per_step": 7.361045850291192,
+   "tau_min": 51.8008770366461,
+   "theta_min": 72.0
+  },
+  "injection_coal_tph->dri_t_h": {
+   "gain_per_step": -0.0985671957805849,
+   "tau_min": 41.69813569897527,
+   "theta_min": 54.0
+  },
+  "injection_coal_tph->peak_bed_T_C": {
+   "gain_per_step": 50.22374497025207,
+   "tau_min": 123.37268334977585,
+   "theta_min": 18.0
+  },
+  "injection_coal_tph->exit_gas_T_C": {
+   "gain_per_step": -1.768969008133613,
+   "tau_min": 2.0,
+   "theta_min": 18.0
+  },
+  "injection_coal_tph->char_C_discharge_t_h": {
+   "gain_per_step": 0.011365207718874505,
+   "tau_min": 4.76334341839413,
+   "theta_min": 18.0
+  },
+  "injection_coal_tph->peak_shell_T_C": {
+   "gain_per_step": 12.851385250989516,
+   "tau_min": 1080.0,
+   "theta_min": 270.0
+  },
+  "injection_coal_tph->exit_O2_vol_pct_dry": {
+   "gain_per_step": -0.2089492827463983,
+   "tau_min": 27.019399293852892,
+   "theta_min": 36.0
+  },
+  "secondary_air_scale->metallization_pct": {
+   "gain_per_step": -8.536644985028506,
+   "tau_min": 153.26376330152993,
+   "theta_min": 72.0
+  },
+  "secondary_air_scale->dri_t_h": {
+   "gain_per_step": 0.11401499783978494,
+   "tau_min": 236.5268424504455,
+   "theta_min": 36.0
+  },
+  "secondary_air_scale->peak_bed_T_C": {
+   "gain_per_step": -10.892788688509306,
+   "tau_min": 99.31127012050953,
+   "theta_min": 0.0
+  },
+  "secondary_air_scale->exit_gas_T_C": {
+   "gain_per_step": -3.2997698094311994,
+   "tau_min": 3.0865331420200657,
+   "theta_min": 18.0
+  },
+  "secondary_air_scale->char_C_discharge_t_h": {
+   "gain_per_step": 0.03344284026626541,
+   "tau_min": 79.9425618796572,
+   "theta_min": 54.0
+  },
+  "secondary_air_scale->peak_shell_T_C": {
+   "gain_per_step": -3.517918823363073,
+   "tau_min": 1080.0,
+   "theta_min": 198.0
+  },
+  "secondary_air_scale->exit_O2_vol_pct_dry": {
+   "gain_per_step": 0.1398276632015941,
+   "tau_min": 7.351108663848318,
+   "theta_min": 18.0
+  },
+  "rpm->metallization_pct": {
+   "gain_per_step": -1.1588757551503805,
+   "tau_min": 14.093350923077843,
+   "theta_min": 18.0
+  },
+  "rpm->dri_t_h": {
+   "gain_per_step": -0.23163791260535802,
+   "tau_min": 190.39693798951524,
+   "theta_min": 144.0
+  },
+  "rpm->peak_bed_T_C": {
+   "gain_per_step": 4.986631943201192,
+   "tau_min": 79.9425618796572,
+   "theta_min": 18.0
+  },
+  "rpm->exit_gas_T_C": {
+   "gain_per_step": -11.386907223280144,
+   "tau_min": 2.0,
+   "theta_min": 18.0
+  },
+  "rpm->char_C_discharge_t_h": {
+   "gain_per_step": -0.029119277552297557,
+   "tau_min": 153.26376330152993,
+   "theta_min": 54.0
+  },
+  "rpm->peak_shell_T_C": {
+   "gain_per_step": -0.0533887603071955,
+   "tau_min": 21.74979735309943,
+   "theta_min": 108.0
+  },
+  "rpm->exit_O2_vol_pct_dry": {
+   "gain_per_step": 0.15875650411111178,
+   "tau_min": 2.0,
+   "theta_min": 18.0
+  }
+ },
+ "inputs": [
+  "pellet_tph",
+  "feed_coal_tph",
+  "injection_coal_tph",
+  "secondary_air_scale",
+  "rpm",
+  "gasification_multiplier",
+  "reduction_multiplier",
+  "pellet_moisture_pct"
+ ],
+ "outputs": [
+  "metallization_pct",
+  "dri_t_h",
+  "peak_bed_T_C",
+  "exit_gas_T_C",
+  "char_C_discharge_t_h",
+  "peak_shell_T_C",
+  "exit_O2_vol_pct_dry",
+  "accretion_risk_max",
+  "FeO_pct",
+  "C_pct",
+  "steam_t_h"
+ ]
+}

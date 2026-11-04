@@ -1,0 +1,21 @@
+{
+ "purpose": "ML-C anomaly / accretion-precursor detection",
+ "metrics": {
+  "isolation_forest_any_fault": {
+   "precision": 0.5596899224806201,
+   "recall": 0.546969696969697,
+   "false_alarms_per_day": 20.285714285714285
+  },
+  "rule_freeze_detector": {
+   "precision": 1.0,
+   "recall": 0.6944444444444444,
+   "false_alarms_per_day": 0.0
+  }
+ },
+ "seed": 20261102,
+ "data": "SYNTHETIC history",
+ "status": "UNVALIDATED RESEARCH SUPPORT",
+ "name": "ml_c_anomaly",
+ "version": "20261103T133458-e61626",
+ "created_utc": "2026-11-03T13:34:58Z"
+}

@@ -1,0 +1,3 @@
+{"preset": "RK-100TPD", "scenario": "minimize_specific_coal", "current": {"gasification_multiplier": 0.95},
+ "measurements": {"metallization_pct": 91.0}, "locked": ["rpm"], "mode": "ADVISORY",
+ "data_timestamp_utc": "2026-11-03T10:00:00Z", "rank_all": true}

@@ -1,0 +1,13 @@
+flowchart TB
+  A[Plant equipment] --> B[PLC/DCS + independent SIS / local PID and protection]
+  B --> C[Plant historian / approved OT read-only connector]
+  C --> D[Industrial DMZ / egress-controlled export]
+  D --> E[Secure analytics ingress / protected API / storage]
+  E --> F[Python physics + state estimator + ML + advisory MPC]
+  F --> G[FastAPI endpoints - Render demo or approved private cloud]
+  G --> H[HTML/CSS/Three.js operator desk - Render Static Site, separate repo]
+  H --> I[Operator views and acknowledges recommendations]
+  I -.-> J[[Future: separate on-prem approval gateway after MoC + sign-off]]
+  J -.-> K[[Site-reviewed, whitelisted supervisory DCS setpoint interface]]
+  classDef future stroke-dasharray: 5 5,fill:#fff3e0,stroke:#d9601a
+  class J,K future

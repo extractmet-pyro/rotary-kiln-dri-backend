@@ -1,0 +1,9 @@
+{
+  "scenario_name": "higher_pellet_moisture",
+  "mode": "OFFLINE_SIMULATION",
+  "preset": "RK-100TPD",
+  "feed": {"pellet_feed_tph": 6.8, "feed_coal_tph": 3.9, "injected_coal_tph": 1.5},
+  "disturbances": {"pellet_moisture_wt_pct": 3.5},
+  "simulation": {"type": "transient", "duration_min": 240, "output_interval_min": 5,
+                 "schedule": [{"t_min": 30, "changes": {"coal.feed_coal_tph": 4.1}}]}
+}

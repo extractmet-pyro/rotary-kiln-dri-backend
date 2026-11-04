@@ -1,0 +1,27 @@
+# Render Blueprint - backend Web Service (Docker).  Deploy from the backend repository root.
+services:
+  - type: web
+    name: rk-dri-twin-api
+    runtime: docker
+    plan: starter            # free plan works for demos but sleeps and has 0.1 CPU (very slow solves)
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health/ready
+    autoDeploy: true
+    envVars:
+      - key: APP_ENV
+        value: demo
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEMO_PUBLIC
+        value: "true"
+      - key: DEMO_USER_PASSWORD
+        sync: false          # set manually in the dashboard
+      - key: ALLOWED_ORIGINS
+        value: https://rk-dri-twin-web.onrender.com
+      - key: MAX_JOB_WORKERS
+        value: "1"
+      - key: DEFAULT_MODE
+        value: DEMO_SYNTHETIC
+    # Optional persistence: attach a disk and point DATABASE_URL at it, or use managed Postgres:
+    # disk: { name: twin-data, mountPath: /app/data, sizeGB: 1 }
